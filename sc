@@ -6,6 +6,10 @@
 # script was add the following line to my .bash_profile:
 #           alias sc="sh ${SPARK_HOME}/sc"
 
+# Once the cluster is started an ipython notebook server will start and populate in your browser.
+# The server is located in the directory that you started the cluster in. The spark cluster master
+# can be accessed at localhost:8080 in your browser.
+
 while getopts "mck" OPTION
 do
     case $OPTION in
