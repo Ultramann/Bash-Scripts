@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# I wrote this script so that I wouldn't have to mess around with tmux and spark every time I wanted
+# to spin up a local cluster. I currently have the working version living in my spark folder.
+# That folder is exported as SPARK_HOME in my .bash_profile. So all I did to add an alias to the
+# script was add the following line to my .bash_profile:
+#           alias sc="sh ${SPARK_HOME}/sc"
+
 while getopts "mck" OPTION
 do
     case $OPTION in
