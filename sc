@@ -59,10 +59,8 @@ do
             ;;
         k)
             echo "Shutting down spark cluster..."
-            # Kill all sessions but the most recent one
-            tmux kill-session -a
-            # Kill the remaining session
-            tmux kill-session
+            # Kill all sessions
+            tmux kill-server
             echo "Done"
             exit
             ;;
